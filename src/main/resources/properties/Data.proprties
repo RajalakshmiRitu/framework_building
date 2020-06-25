@@ -1,0 +1,10 @@
+browserKey=webdriver.chrome.driver
+browserValue=./softwares/chromedriver.exe
+URL =http://localhost/shopping/
+browserName= CHROME
+
+
+#browserKey=webdriver.gecko.driver
+#browserValue=./softwares/geckodriver.exe
+#URL =http://localhost/shopping/
+#browserName=FIREFOX
