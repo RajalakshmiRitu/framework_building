@@ -14,7 +14,7 @@ import com.tyss.framework_building.lib.GenericLib;
 public class MyListener implements ITestListener
 {
 
-	public void onTestStart(ITestResult result) {
+public void onTestStart(ITestResult result) {
 		
 		DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy hh-mm-ss");
 		String startTime=LocalDateTime.now().format(dtf);

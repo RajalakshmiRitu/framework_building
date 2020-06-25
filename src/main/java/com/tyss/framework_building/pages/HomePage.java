@@ -8,34 +8,39 @@ import org.openqa.selenium.support.PageFactory;
 import com.tyss.framework_building.lib.GenericLib;
 
 public class HomePage
-{
-	WebDriver driver;
+{WebDriver driver;
 
-	@FindBy(xpath="//a[contains(.,'My Account')]")
-	private WebElement myAccountBtn;
-	
-	
-	@FindBy(name="product")
-	private WebElement searchBox;
+@FindBy(xpath="//a[contains(.,'My Account')]")
+private WebElement myAccountBtn;
 
-	
-	@FindBy(name="serach")
-	private WebElement searchBtn;
-	
-	public HomePage(WebDriver driver) {
-		
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-		
-	}
 
-	public void myAccountBtnClick() {
-		
-		myAccountBtn.click();
-		
-	}
+@FindBy(name="product")
+private WebElement searchBox;
+
+
+@FindBy(name="serach")
+private WebElement searchBtn;
+
+@FindBy(xpath="//ul[@class='nav navbar-nav']//li[@class='dropdown yamm'][1]")
+private WebElement booksBtn;
+
+public HomePage(WebDriver driver) {
 	
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
 	
+}
+
+public void myAccountBtnClick() {
 	
+	myAccountBtn.click();
 	
+}
+
+public void BooksClick() {
+ booksBtn.click();
+
+
+}
+
 }

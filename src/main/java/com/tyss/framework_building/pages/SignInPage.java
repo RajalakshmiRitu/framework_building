@@ -25,10 +25,14 @@ public class SignInPage
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void doLogi(String username,String password)
+	public void doLogin(String username,String password)
 	{
 		GenericLib.enterText(driver, unTxtBox, username,"Username Textbox");
 		GenericLib.enterText(driver, pwdTxtBox, password,"Password Textbox");
 		GenericLib.clickElement(driver, loginBtn, "LoginBtn");
+	}
+	public String getSignInPageTile()
+	{
+		return driver.getTitle();
 	}
 }
