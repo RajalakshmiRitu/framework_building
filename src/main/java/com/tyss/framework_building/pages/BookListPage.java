@@ -41,7 +41,6 @@ public class BookListPage
 	}
 	
 	
-	
 	public void booksCheckbxClick() throws InterruptedException {
 	
 		booksCheckbox.click();
