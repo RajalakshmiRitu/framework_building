@@ -36,7 +36,7 @@ public class LoginTest extends BaseLib
 		String pw=ExcelLib.getData("Sheet1", 1, 2, IConstants.dataExcelPath);
 		sip.doLogin(un,pw);	
 		MyCartPage mcp=new MyCartPage(driver);
-		//Assert.assertTrue(mcp.getWelcomeName().contains(ExcelLib.getData("Sheet1", 1, 3, IConstants.ExpectedExcelData)));
+		Assert.assertTrue(mcp.getWelcomeName().contains(ExcelLib.getData("Sheet1", 1, 3, IConstants.ExpectedExcelData)));
 		Thread.sleep(3000);	
 	}
 }	

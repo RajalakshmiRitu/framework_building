@@ -94,4 +94,9 @@ public static void scrollBy(WebDriver driver,int x,int y) throws InterruptedExce
 
     }
 
+public static void saveScreenShot(WebDriver driver, String name) {
+	// TODO Auto-generated method stub
+	
+}
+
 }
