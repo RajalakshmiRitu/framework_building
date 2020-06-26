@@ -44,7 +44,7 @@ public class BookListPage
 	public void booksCheckbxClick() throws InterruptedException {
 	
 		booksCheckbox.click();
-		//GenericLib.scrollBy(driver, 0, 250);
+		GenericLib.scrollBy(driver, 0, 250);
 
 
 	}
